@@ -128,7 +128,7 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
  /* desktop */
-@media  screen {
+@media  screen  {
     .container{
         max-width: 100%;
     }
@@ -136,13 +136,17 @@ img {
 
 /* tablet */
 @media screen and (max-width: 768px) {
-    /* .container{
+    .container{
         max-width: 100%;
-    } */
+    }
 }
 
 /* telefono */
 @media screen and (max-width: 480px){
+    .container{
+        max-width: 100%;
+    }
+    
     .row{
         display: flex;
         flex-direction: column;
@@ -152,13 +156,19 @@ img {
     .col{
         display: flex;
         justify-content: center;
+        
     }
 
-    .card img{
-            max-width: none;
+    .why-us .col-left{
+        width: 100%;
     }
 
-    .card p{
-        margin-bottom: 30px;
+    .steps .col{
+        width: 100%;
+    }
+
+    .lessons .col {
+        width: 100%; 
+        margin-bottom: 80px;
     }
 }
